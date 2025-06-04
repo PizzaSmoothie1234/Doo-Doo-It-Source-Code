@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Doo-Doo-It</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Titan+One&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+      background-color: #4a2e1b;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .left {
+      flex: 1;
+      background-color: #5d3a1a;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 20px;
+    }
+
+    .title {
+      font-family: 'Titan One', cursive;
+      font-size: 40px;
+      color: white;
+      text-shadow: 0 0 8px #ffffffaa;
+    }
+
+    .description {
+      color: #ffffffcc;
+      font-size: 16px;
+      margin-top: 10px;
+      max-width: 300px;
+    }
+
+    .pronounce {
+      color: #bfa78f;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    .pronounce-button {
+      color: #a1876e;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .pronounce-button:hover {
+      text-decoration: underline;
+    }
+
+    .fa-volume-high {
+      color: #a1876e;
+    }
+
+    .right {
+      flex: 1;
+      background-image: url('https://i.ibb.co/dJmvTG25/blook-background-1.png');
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .blooks-img {
+      max-width: 90%;
+      height: auto;
+      transform: rotate(-10deg);
+    }
+
+    .buttons {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .buttons a {
+      background-color: #6d4c2d;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      margin-left: 10px;
+      box-shadow: 0 2px 6px #00000044;
+      transition: background-color 0.2s;
+    }
+
+    .buttons a:hover {
+      background-color: #8b5e3c;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 40px;
+      background-color: #3a2415;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
+    }
+
+    .footer a {
+      margin-left: 10px;
+      background-color: #5c3822;
+      color: white;
+      padding: 5px 12px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.2s;
+    }
+
+    .footer a:hover {
+      background-color: #7c4c2c;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left">
+      <div>
+        <div class="title">Doo-Doo-It</div>
+        <div class="description">
+          Doo-Doo-It is the first poop-themed Blooket Private Server! Made in HTML and CSS.
+          <div class="pronounce">
+            Pronounced: 
+            <span class="pronounce-button" onclick="playAudio()">
+              <i class="fa-solid fa-volume-high"></i> “Doo-Doo-It”
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <img src="https://i.ibb.co/9kxKSnH2/image-48.png" alt="Blooks" class="blooks-img">
+      <div class="buttons">
+        <a href="login.html">Log In</a>
+        <a href="register.html">Register</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    PizzaSmoothieOG © 2025 All Rights Reserved.
+    <a href="https://discord.gg/6eFzG9eM" target="_blank">Discord</a>
+  </div>
+
+  <!-- Audio Player -->
+  <audio id="pronounce-audio" src="https://media.vocaroo.com/mp3/1fjUaSNKG2qa" preload="auto"></audio>
+
+  <script>
+    function playAudio() {
+      const audio = document.getElementById("pronounce-audio");
+      audio.play();
+    }
+  </script>
+</body>
+</html>
