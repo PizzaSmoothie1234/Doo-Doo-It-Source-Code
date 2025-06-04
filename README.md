@@ -1,2 +1,1 @@
-# Doo-Doo-It-Source-Code
-new blooket private server
+READ @CREDITS.md!!!
