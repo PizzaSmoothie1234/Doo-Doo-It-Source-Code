@@ -140,7 +140,7 @@
     if (accounts[username] && accounts[username].password === password) {
       alert("Login successful!");
       localStorage.setItem("loggedInUser", username); // store current session
-      window.location.href = "stats.html"; // go to stats page
+      window.location.href = "login.html"; // go to stats page
     } else {
       alert("Invalid username or password.");
     }
